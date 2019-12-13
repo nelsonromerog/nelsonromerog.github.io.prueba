@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+
+  <title>Clasificación de burbujas</title>
+  <meta name="description" content="1- Cargando las imágenes
+
+">
+  <meta name="author" content="Nelsón Romero García">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Clasificación de burbujas">
+  <meta name="twitter:description" content="1- Cargando las imágenes
+
+">
+  
+  <meta name="twitter:creator" content="nelsonromerog">
+  
+  <meta name="twitter:image" content="/images/favicons/favicon-194x194.png" />
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Clasificación de burbujas">
+  <meta property="og:description" content="1- Cargando las imágenes
+
+">
+  <meta property="og:image" content="/images/favicons/favicon-194x194.png" />
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/images/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/images/favicons/manifest.json">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  
+  <link rel="stylesheet" href="/css/main.css?1575324384102180100">
+  <link rel="canonical" href="http://localhost:4000/2016/welcome-to-jekyll/">
+  <link rel="alternate" type="application/rss+xml" title="Nelsón Romero García" href="/feed.xml">
+</head>
+
+
+  <body>
+    <span class="mobile btn-mobile-menu">
+  <i class="icon icon-list btn-mobile-menu__icon"></i>
+  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+</span>
+
+<header class="panel-cover" style="background-image: url(/images/cover.jpg)">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+        <a href="/" title="link to home of Nelsón Romero García">
+          <img src="/images/nelson-romero.jpg" class="user-image" alt="My Profile Photo">
+          <h1 class="panel-cover__title panel-title">Nelsón Romero García</h1>
+        </a>
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">Desarrollador de sistemas interesado en la Inteligencia Artificial. Siempre con deseos de aprender.</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="link to Nelsón Romero García blog" class="blog-button">Blog</a></li>
+            </ul>
+          </nav>
+
+          <nav class="cover-navigation navigation--social">
+            <ul class="navigation">
+
+            
+              <!-- Twitter -->
+              <li class="navigation__item">
+                <a href="http://twitter.com/nelsonromerog" title="@nelsonromerog on Twitter" target="_blank">
+                  <i class="icon icon-social-twitter"></i>
+                  <span class="label">Twitter</span>
+                </a>
+              </li>
+            
+
+            
+
+            
+              <!-- LinkedIn -->
+              <li class="navigation__item">
+                <a href="https://www.linkedin.com/in/nelsonromerog" title="nelsonromerog on LinkedIn" target="_blank">
+                  <i class="icon icon-social-linkedin"></i>
+                  <span class="label">LinkedIn</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://www.github.com/nelsonromerog" title="nelsonromerog on GitHub" target="_blank">
+                  <i class="icon icon-social-github"></i>
+                  <span class="label">GitHub</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- Email -->
+              <li class="navigation__item">
+                <a href="mailto:nelsonromero219@gmail.com" title="Email nelsonromero219@gmail.com" target="_blank">
+                  <i class="icon icon-mail"></i>
+                  <span class="label">Email</span>
+                </a>
+              </li>
+            
+            <!-- RSS -->
+            <!--
+            <li class="navigation__item">
+              <a href="/feed.xml" title="Subscribe" target="_blank">
+                <i class="icon icon-rss"></i>
+                <span class="label">RSS</span>
+              </a>
+            </li>
+            -->
+
+            </ul>
+          </nav>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <article class="post-container post-container--single">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2016-01-08 08:04" class="post-meta__date date">8 Jan 2016</time>
+      
+      &#8226; <span class="post-meta__tags">on <a href="/tags/#burbujas">burbujas</a></span>
+      
+    </div>
+    <h1 class="post-title">Clasificación de burbujas</h1>
+  </header>
+
+  <section class="post">
+    <h1 id="1--cargando-las-imágenes">1- Cargando las imágenes</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">skimage.io</span> <span class="kn">import</span> <span class="n">imread_collection</span>
+
+<span class="c1">#path 
+</span><span class="n">col_dir</span> <span class="o">=</span> <span class="s">'C:</span><span class="se">\\</span><span class="s">Users</span><span class="se">\\</span><span class="s">nelso</span><span class="se">\\</span><span class="s">Google Drive</span><span class="se">\\</span><span class="s">JupiterNotebooks</span><span class="se">\\</span><span class="s">tesis</span><span class="se">\\</span><span class="s">images</span><span class="se">\\</span><span class="s">*.png'</span>
+<span class="c1">#creating a collection with the available images
+</span><span class="n">collection</span> <span class="o">=</span> <span class="n">imread_collection</span><span class="p">(</span><span class="n">col_dir</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="2--creando-matriz-de-imágenes-aplicando-la-transformada-de-fourier">2- Creando matriz de imágenes aplicando la Transformada de Fourier</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">fftpack</span>
+
+<span class="n">Xff2</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ravel</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="nb">abs</span><span class="p">(</span><span class="n">fftpack</span><span class="o">.</span><span class="n">fft2</span><span class="p">(</span><span class="n">col</span><span class="p">)))</span><span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">collection</span><span class="p">]</span> 
+</code></pre></div></div>
+
+<h1 id="3--aplicando-pca">3- Aplicando PCA</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+</code></pre></div></div>
+
+<h2 id="31--pca-para-2-componentes">3.1- PCA para 2 componentes</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">pcafitXff2</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">Xff2</span><span class="p">)</span>
+<span class="n">pcatransformXff2</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">Xff2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="32--pca-para-todos-los-componentes">3.2- PCA para todos los componentes</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pcaN</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">pcafitXff2N</span> <span class="o">=</span> <span class="n">pcaN</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">Xff2</span><span class="p">)</span>
+<span class="n">pcatransformXff2N</span> <span class="o">=</span> <span class="n">pcaN</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">Xff2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="33--graficando-pca-para-2-componentes-y-para-todos-los-componentes">3.3- Graficando PCA para 2 componentes y para todos los componentes</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="c1"># plot the Elbow Method with PCA2**************************************************************
+</span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">121</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">pcatransformXff2</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="s">'black'</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">.8</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">'PCA 2 componentes para Xff2'</span><span class="o">+</span><span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="o">+</span><span class="s">'Relación de varianza explicada pcaXff2 (primeros 2 componentes): {}'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">pcafitXff2</span><span class="o">.</span><span class="n">explained_variance_ratio_</span><span class="p">))</span>
+<span class="c1"># plot the Elbow Method with PCAN**************************************************************
+</span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">122</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">pcatransformXff2N</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2N</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="s">'black'</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">.8</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">'PCA N componentes para Xff2N'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="/images/posts/clasificacion-burbujas/output_11_0.png" alt="png" /></p>
+
+<h2 id="34--graficando-el-porcentaje-de-varianza-explicada-para-todos-los-componentes">3.4- Graficando el porcentaje de varianza explicada para todos los componentes</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">pcafitXff2N</span><span class="o">.</span><span class="n">explained_variance_ratio_</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'Número de componentes'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'Varianza explicada acumulada (</span><span class="si">%</span><span class="s">)'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">'Relación de varianza explicada X'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="/images/posts/clasificacion-burbujas/output_13_0.png" alt="png" /></p>
+
+<h1 id="4--aplicando-agrupamiento-con-kmeans">4- Aplicando agrupamiento con KMeans</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <span class="n">KMeans</span>
+</code></pre></div></div>
+
+<h2 id="41--kmeans-sobre-el-resultado-de-pca-para-2-componentes">4.1- KMeans sobre el resultado de PCA para 2 componentes</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Number of clusters
+</span><span class="n">y_pred2</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">y_pred21</span> <span class="o">=</span> <span class="n">y_pred2</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">pcatransformXff2</span><span class="p">)</span>
+<span class="n">y_pred3</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">y_pred31</span> <span class="o">=</span> <span class="n">y_pred3</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">pcatransformXff2</span><span class="p">)</span>
+<span class="n">y_pred4</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">y_pred41</span> <span class="o">=</span> <span class="n">y_pred4</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">pcatransformXff2</span><span class="p">)</span>
+<span class="n">y_pred5</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">y_pred51</span> <span class="o">=</span> <span class="n">y_pred5</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">pcatransformXff2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="42--kmeans-sobre-el-resultado-de-pca-para-todos-los-componentes">4.2- KMeans sobre el resultado de PCA para todos los componentes</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Number of clusters
+</span><span class="n">y_pred2N</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">y_pred21N</span> <span class="o">=</span> <span class="n">y_pred2N</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">pcatransformXff2N</span><span class="p">)</span>
+<span class="n">y_pred3N</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">y_pred31N</span> <span class="o">=</span> <span class="n">y_pred3N</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">pcatransformXff2N</span><span class="p">)</span>
+<span class="n">y_pred4N</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">y_pred41N</span> <span class="o">=</span> <span class="n">y_pred4N</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">pcatransformXff2N</span><span class="p">)</span>
+<span class="n">y_pred5N</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">y_pred51N</span> <span class="o">=</span> <span class="n">y_pred5N</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">pcatransformXff2N</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="43--graficando-el-agrupamiento-resultante-despúes-de-aplicar-kmeans-para-diferentes-números-de-clúster">4.3- Graficando el agrupamiento resultante despúes de aplicar KMeans para diferentes números de clúster</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">25</span><span class="p">))</span>
+
+<span class="c1"># plot the 2 clusters PCA2**************************************************************
+</span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">421</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred21</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred21</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 1'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred21</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred21</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 2'</span>
+<span class="p">)</span>
+<span class="c1"># plot the centroids
+</span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">y_pred2</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">y_pred2</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">s</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'*'</span><span class="p">,</span>
+    <span class="n">c</span><span class="o">=</span><span class="s">'black'</span><span class="p">,</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'centroids'</span>
+<span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">scatterpoints</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"n_clusters=2"</span><span class="p">)</span>
+
+<span class="c1"># plot the 2 clusters PCAN**************************************************************
+</span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">422</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred21N</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred21N</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 1'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred21N</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred21N</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 2'</span>
+<span class="p">)</span>
+<span class="c1"># plot the centroids
+</span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">y_pred2N</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">y_pred2N</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">s</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'*'</span><span class="p">,</span>
+    <span class="n">c</span><span class="o">=</span><span class="s">'black'</span><span class="p">,</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'centroids'</span>
+<span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">scatterpoints</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"n_clusters=2"</span><span class="p">)</span>
+<span class="c1">#*************************************************************************************************************************************************************************************************
+# plot the 3 clusters PCA2**************************************************************
+</span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">423</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred31</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred31</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 1'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred31</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred31</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 2'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred31</span> <span class="o">==</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred31</span> <span class="o">==</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 3'</span>
+<span class="p">)</span>
+<span class="c1"># plot the centroids
+</span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">y_pred3</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">y_pred3</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">s</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'*'</span><span class="p">,</span>
+    <span class="n">c</span><span class="o">=</span><span class="s">'black'</span><span class="p">,</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'centroids'</span>
+<span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">scatterpoints</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"n_clusters=3"</span><span class="p">)</span>
+
+<span class="c1"># plot the 3 clusters PCAN**************************************************************
+</span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">424</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred31N</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred31N</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 1'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred31N</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred31N</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 2'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred31N</span> <span class="o">==</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred31N</span> <span class="o">==</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 3'</span>
+<span class="p">)</span>
+<span class="c1"># plot the centroids
+</span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">y_pred3N</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">y_pred3N</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">s</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'*'</span><span class="p">,</span>
+    <span class="n">c</span><span class="o">=</span><span class="s">'black'</span><span class="p">,</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'centroids'</span>
+<span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">scatterpoints</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"n_clusters=3"</span><span class="p">)</span>
+<span class="c1">#***********************************************************************************************************************************************************************
+# plot the 4 clusters PCA2**************************************************************
+</span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">425</span><span class="p">)</span>  
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred41</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred41</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 1'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred41</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred41</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 2'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred41</span> <span class="o">==</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred41</span> <span class="o">==</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 3'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred41</span> <span class="o">==</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred41</span> <span class="o">==</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 4'</span>
+<span class="p">)</span>
+<span class="c1"># plot the centroids
+</span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">y_pred4</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">y_pred4</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">s</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'*'</span><span class="p">,</span>
+    <span class="n">c</span><span class="o">=</span><span class="s">'black'</span><span class="p">,</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'centroids'</span>
+<span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">scatterpoints</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"n_clusters=4"</span><span class="p">)</span>
+
+<span class="c1"># plot the 4 clusters PCAN**************************************************************
+</span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">426</span><span class="p">)</span>  
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred41N</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred41N</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 1'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred41N</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred41N</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 2'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred41N</span> <span class="o">==</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred41N</span> <span class="o">==</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 3'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred41N</span> <span class="o">==</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred41N</span> <span class="o">==</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 4'</span>
+<span class="p">)</span>
+<span class="c1"># plot the centroids
+</span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">y_pred4N</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">y_pred4N</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">s</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'*'</span><span class="p">,</span>
+    <span class="n">c</span><span class="o">=</span><span class="s">'black'</span><span class="p">,</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'centroids'</span>
+<span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">scatterpoints</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"n_clusters=4"</span><span class="p">)</span>
+<span class="c1">#**************************************************************************************************************************************************************************************
+# plot the 5 clusters PCA2**************************************************************
+</span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">427</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred51</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred51</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 1'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred51</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred51</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 2'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred51</span> <span class="o">==</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred51</span> <span class="o">==</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 3'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred51</span> <span class="o">==</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred51</span> <span class="o">==</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 4'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred51</span> <span class="o">==</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">y_pred51</span> <span class="o">==</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 5'</span>
+<span class="p">)</span>
+<span class="c1"># plot the centroids
+</span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">y_pred5</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">y_pred5</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">s</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'*'</span><span class="p">,</span>
+    <span class="n">c</span><span class="o">=</span><span class="s">'black'</span><span class="p">,</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'centroids'</span>
+<span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">scatterpoints</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"n_clusters=5"</span><span class="p">)</span>
+
+<span class="c1"># plot the 5 clusters**************************************************************
+</span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">428</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred51N</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred51N</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 1'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred51N</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred51N</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 2'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred51N</span> <span class="o">==</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred51N</span> <span class="o">==</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 3'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred51N</span> <span class="o">==</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred51N</span> <span class="o">==</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 4'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred51N</span> <span class="o">==</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">y_pred51N</span> <span class="o">==</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 5'</span>
+<span class="p">)</span>
+<span class="c1"># plot the centroids
+</span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">y_pred5N</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">y_pred5N</span><span class="o">.</span><span class="n">cluster_centers_</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">s</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'*'</span><span class="p">,</span>
+    <span class="n">c</span><span class="o">=</span><span class="s">'black'</span><span class="p">,</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'centroids'</span>
+<span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">scatterpoints</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"n_clusters=5"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s">'KMeans con PCA para 2 componentes'</span> <span class="o">+</span> <span class="s">'               '</span> <span class="o">+</span> <span class="s">'KMeans con PCA para N componentes'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">25</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="/images/posts/clasificacion-burbujas/output_21_0.png" alt="png" /></p>
+
+<h2 id="44--aplicando-el-método-del-codo-para-estimar-el-número-óptimo-de-grupos-k-para-aplicar-las-kmeans">4.4- Aplicando el método del codo para estimar el número óptimo de grupos K para aplicar las KMeans</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+
+<span class="c1"># plot the Elbow Method with PCA2**************************************************************
+</span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">121</span><span class="p">)</span>
+<span class="c1"># calculate distortion for a range of number of cluster
+</span><span class="n">distortions</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
+    <span class="n">km</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="n">i</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">km</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">pcatransformXff2</span><span class="p">)</span>
+    <span class="n">distortions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">km</span><span class="o">.</span><span class="n">inertia_</span><span class="p">)</span>
+    
+<span class="c1"># plot
+</span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">),</span> <span class="n">distortions</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'o'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'Número de clústers'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'Distorsión para el valor k'</span><span class="p">)</span>
+
+<span class="c1"># plot the Elbow Method with PCAN**************************************************************
+</span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">122</span><span class="p">)</span>
+<span class="c1"># calculate distortion for a range of number of cluster
+</span><span class="n">distortionsN</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
+    <span class="n">km</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="n">i</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">km</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">pcatransformXff2N</span><span class="p">)</span>
+    <span class="n">distortionsN</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">km</span><span class="o">.</span><span class="n">inertia_</span><span class="p">)</span>
+    
+<span class="c1"># plot
+</span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">),</span> <span class="n">distortionsN</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'o'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'Número de clústers'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'Distorsión para el valor k'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s">'KMeans con PCA para 2 componentes'</span> <span class="o">+</span> <span class="s">'                                                                    '</span> <span class="o">+</span> <span class="s">'KMeans con PCA para N componentes'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="/images/posts/clasificacion-burbujas/output_23_0.png" alt="png" /></p>
+
+<h2 id="45--aplicando-el-método-de-silueta-para-analizar-la-distancia-de-separación-entre-los-clústers-resultantes-y-el-número-óptimo-de-clúster-k-para-aplicar-las-kmeans">4.5- Aplicando el método de silueta para analizar la distancia de separación entre los clústers resultantes y el número óptimo de clúster K para aplicar las KMeans</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">silhouette_score</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+
+<span class="c1"># plot the Silhouette Method with PCA2**************************************************************
+</span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">range_n_clusters</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="n">silhouette_avgs</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">n_clusters</span> <span class="ow">in</span> <span class="n">range_n_clusters</span><span class="p">:</span>
+    <span class="n">clusterer</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="n">n_clusters</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">cluster_labels</span> <span class="o">=</span> <span class="n">clusterer</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">pcatransformXff2</span><span class="p">)</span>
+    <span class="n">silhouette_avg</span> <span class="o">=</span> <span class="n">silhouette_score</span><span class="p">(</span><span class="n">pcatransformXff2</span><span class="p">,</span> <span class="n">cluster_labels</span><span class="p">)</span>
+    <span class="n">silhouette_avgs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">silhouette_avg</span><span class="p">)</span>
+    
+<span class="c1"># plot
+</span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">11</span><span class="p">),</span> <span class="n">silhouette_avgs</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'o'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'Número de clústers'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'Promedio de puntuación de silueta'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s">'Coeficientes del método de silueta para los n clústers con KMeans'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="/images/posts/clasificacion-burbujas/output_25_0.png" alt="png" /></p>
+
+<h1 id="5--aplicando-agrupamiento-con-el-método-de-gaussianas">5- Aplicando agrupamiento con el método de Gaussianas</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.mixture</span> <span class="kn">import</span> <span class="n">GaussianMixture</span>
+</code></pre></div></div>
+
+<h2 id="51--gaussianas-sobre-el-resultado-de-pca-para-2-componentes">5.1- Gaussianas sobre el resultado de PCA para 2 componentes</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">gmm</span> <span class="o">=</span> <span class="n">GaussianMixture</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="n">gmm</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">pcatransformXff2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="52--gaussianas-sobre-el-resultado-de-pca-para-todos-los-componentes">5.2- Gaussianas sobre el resultado de PCA para todos los componentes</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">gmmN</span> <span class="o">=</span> <span class="n">GaussianMixture</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">labelsN</span> <span class="o">=</span> <span class="n">gmmN</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">pcatransformXff2N</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="53--graficando-método-de-gaussianas-para-2-componentes-y-para-todos-los-componentes">5.3- Graficando método de Gaussianas para 2 componentes y para todos los componentes</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+
+<span class="c1"># plot the Gaussian Mixture with PCA2**************************************************************
+</span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">121</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">labels</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">labels</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 1'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">labels</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">labels</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 2'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">labels</span> <span class="o">==</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">labels</span> <span class="o">==</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 3'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">labels</span> <span class="o">==</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">labels</span> <span class="o">==</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 4'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">labels</span> <span class="o">==</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2</span><span class="p">[</span><span class="n">labels</span> <span class="o">==</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 5'</span>
+<span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">scatterpoints</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"n_clusters=5"</span><span class="p">)</span>
+
+<span class="c1"># plot the Gaussian Mixture with PCAN**************************************************************
+</span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">122</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">labelsN</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">labelsN</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 1'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">labelsN</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">labelsN</span> <span class="o">==</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 2'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">labelsN</span> <span class="o">==</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">labelsN</span> <span class="o">==</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 3'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">labelsN</span> <span class="o">==</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">labelsN</span> <span class="o">==</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 4'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">labelsN</span> <span class="o">==</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">pcatransformXff2N</span><span class="p">[</span><span class="n">labelsN</span> <span class="o">==</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="n">label</span><span class="o">=</span><span class="s">'cluster 5'</span>
+<span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">scatterpoints</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"n_clusters=5"</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s">'KMeans con PCA para 2 componentes'</span> <span class="o">+</span> <span class="s">'                                                                    '</span> <span class="o">+</span> <span class="s">'KMeans con PCA para N componentes'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="/images/posts/clasificacion-burbujas/output_33_0.png" alt="png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">gmmN</span> <span class="o">=</span> <span class="n">GaussianMixture</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">labelsN</span> <span class="o">=</span> <span class="n">gmmN</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">pcatransformXff2N</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---------------------------------------------------------------------------
+
+LinAlgError                               Traceback (most recent call last)
+
+~\Anaconda3\envs\tesis\lib\site-packages\sklearn\mixture\gaussian_mixture.py in _compute_precision_cholesky(covariances, covariance_type)
+    316             try:
+--&gt; 317                 cov_chol = linalg.cholesky(covariance, lower=True)
+    318             except linalg.LinAlgError:
+
+
+~\Anaconda3\envs\tesis\lib\site-packages\scipy\linalg\decomp_cholesky.py in cholesky(a, lower, overwrite_a, check_finite)
+     90     c, lower = _cholesky(a, lower=lower, overwrite_a=overwrite_a, clean=True,
+---&gt; 91                          check_finite=check_finite)
+     92     return c
+
+
+~\Anaconda3\envs\tesis\lib\site-packages\scipy\linalg\decomp_cholesky.py in _cholesky(a, lower, overwrite_a, clean, check_finite)
+     39         raise LinAlgError("%d-th leading minor of the array is not positive "
+---&gt; 40                           "definite" % info)
+     41     if info &lt; 0:
+
+
+LinAlgError: 137-th leading minor of the array is not positive definite
+
+
+During handling of the above exception, another exception occurred:
+
+
+ValueError                                Traceback (most recent call last)
+
+&lt;ipython-input-28-1331222f2bfe&gt; in &lt;module&gt;
+      1 gmmN = GaussianMixture(n_components=5, random_state=0)
+----&gt; 2 labelsN = gmmN.fit_predict(pcatransformXff2N)
+
+
+~\Anaconda3\envs\tesis\lib\site-packages\sklearn\mixture\base.py in fit_predict(self, X, y)
+    232 
+    233             if do_init:
+--&gt; 234                 self._initialize_parameters(X, random_state)
+    235 
+    236             lower_bound = (-np.infty if do_init else self.lower_bound_)
+
+
+~\Anaconda3\envs\tesis\lib\site-packages\sklearn\mixture\base.py in _initialize_parameters(self, X, random_state)
+    153                              % self.init_params)
+    154 
+--&gt; 155         self._initialize(X, resp)
+    156 
+    157     @abstractmethod
+
+
+~\Anaconda3\envs\tesis\lib\site-packages\sklearn\mixture\gaussian_mixture.py in _initialize(self, X, resp)
+    647             self.covariances_ = covariances
+    648             self.precisions_cholesky_ = _compute_precision_cholesky(
+--&gt; 649                 covariances, self.covariance_type)
+    650         elif self.covariance_type == 'full':
+    651             self.precisions_cholesky_ = np.array(
+
+
+~\Anaconda3\envs\tesis\lib\site-packages\sklearn\mixture\gaussian_mixture.py in _compute_precision_cholesky(covariances, covariance_type)
+    317                 cov_chol = linalg.cholesky(covariance, lower=True)
+    318             except linalg.LinAlgError:
+--&gt; 319                 raise ValueError(estimate_precision_error_message)
+    320             precisions_chol[k] = linalg.solve_triangular(cov_chol,
+    321                                                          np.eye(n_features),
+
+
+ValueError: Fitting the mixture model failed because some components have ill-defined empirical covariance (for instance caused by singleton or collapsed samples). Try to decrease the number of components, or increase reg_covar.
+</code></pre></div></div>
+
+<h2 id="54--aplicando-el-método-de-silueta-para-analizar-la-distancia-de-separación-entre-los-clústers-resultantes-y-el-número-óptimo-de-clúster-k-para-aplicar-método-de-gaussianas">5.4- Aplicando el método de silueta para analizar la distancia de separación entre los clústers resultantes y el número óptimo de clúster K para aplicar método de Gaussianas</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+
+<span class="c1"># plot the Silhouette Method with PCA2**************************************************************
+</span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">range_n_clusters</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="n">silhouette_avgsGaussianMixture</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">n_clusters</span> <span class="ow">in</span> <span class="n">range_n_clusters</span><span class="p">:</span>
+    <span class="n">clusterer</span> <span class="o">=</span> <span class="n">GaussianMixture</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">n_clusters</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">cluster_labels</span> <span class="o">=</span> <span class="n">clusterer</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">pcatransformXff2</span><span class="p">)</span>
+    <span class="n">silhouette_avg</span> <span class="o">=</span> <span class="n">silhouette_score</span><span class="p">(</span><span class="n">pcatransformXff2</span><span class="p">,</span> <span class="n">cluster_labels</span><span class="p">)</span>
+    <span class="n">silhouette_avgsGaussianMixture</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">silhouette_avg</span><span class="p">)</span>
+    
+<span class="c1"># plot
+</span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">11</span><span class="p">),</span> <span class="n">silhouette_avgsGaussianMixture</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'o'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'Número de clústers'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'Promedio de puntuación de silueta'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s">'Coeficientes del método de silueta para los n clústers con el método de Gaussianas'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="/images/posts/clasificacion-burbujas/output_36_0.png" alt="png" /></p>
+
+<h1 id="6--tomando-imágenes-prototipos-de-cada-clúster-formado-a-partir-del-método-de-gaussianas">6- Tomando imágenes prototipos de cada clúster formado a partir del método de Gaussianas</h1>
+
+<h2 id="61--obteniendo-las-probabilidades-de-cada-imagen-para-cada-uno-de-los-clústers">6.1- Obteniendo las probabilidades de cada imagen para cada uno de los clústers</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">probs</span> <span class="o">=</span> <span class="n">gmm</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">pcatransformXff2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="62--obteniendo-por-cada-clúster-las-imágenes-más-representativas">6.2- Obteniendo por cada clúster las imágenes más representativas</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">probs</span> <span class="o">==</span> <span class="n">probs</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="nb">max</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Tuple of arrays returned 0 : '</span><span class="p">,</span> <span class="n">result0</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Porb : '</span><span class="p">,</span> <span class="n">probs</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="nb">max</span><span class="p">())</span>
+<span class="n">result1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">probs</span> <span class="o">==</span> <span class="n">probs</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="nb">max</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Tuple of arrays returned 1 : '</span><span class="p">,</span> <span class="n">result1</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Porb : '</span><span class="p">,</span> <span class="n">probs</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="nb">max</span><span class="p">())</span>
+<span class="n">result2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">probs</span> <span class="o">==</span> <span class="n">probs</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="nb">max</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Tuple of arrays returned 2 : '</span><span class="p">,</span> <span class="n">result2</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Porb : '</span><span class="p">,</span> <span class="n">probs</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="nb">max</span><span class="p">())</span>
+<span class="n">result3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">probs</span> <span class="o">==</span> <span class="n">probs</span><span class="p">[:,</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="nb">max</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Tuple of arrays returned 3 : '</span><span class="p">,</span> <span class="n">result3</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Porb : '</span><span class="p">,</span> <span class="n">probs</span><span class="p">[:,</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="nb">max</span><span class="p">())</span>
+<span class="n">result4</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">probs</span> <span class="o">==</span> <span class="n">probs</span><span class="p">[:,</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="nb">max</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Tuple of arrays returned 4 : '</span><span class="p">,</span> <span class="n">result4</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">'Porb : '</span><span class="p">,</span> <span class="n">probs</span><span class="p">[:,</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="nb">max</span><span class="p">())</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">15</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">231</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">collection</span><span class="p">[</span><span class="n">result0</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Clúster 1"</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">232</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">collection</span><span class="p">[</span><span class="n">result1</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Clúster 2"</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">233</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">collection</span><span class="p">[</span><span class="n">result2</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Clúster 3"</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">234</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">collection</span><span class="p">[</span><span class="n">result3</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Clúster 4"</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">235</span><span class="p">)</span>  
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">collection</span><span class="p">[</span><span class="n">result4</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Clúster 5"</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s">'Imágenes representativas por cada uno de los clústers formados'</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">25</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Tuple of arrays returned 0 :  (array([195, 399], dtype=int64), array([0, 0], dtype=int64))
+Porb :  0.9999999913599673
+Tuple of arrays returned 1 :  (array([466], dtype=int64), array([1], dtype=int64))
+Porb :  0.9999999997778062
+Tuple of arrays returned 2 :  (array([ 28, 232], dtype=int64), array([2, 2], dtype=int64))
+Porb :  0.9999961072619309
+Tuple of arrays returned 3 :  (array([ 30,  31,  32,  33,  54,  55,  64,  65,  66,  67, 234, 235, 236,
+       237, 259, 269, 270, 271, 272, 408, 409, 410, 411, 430, 431, 432,
+       433, 434, 435, 436, 444, 445, 446, 447, 448, 449, 450, 451, 452,
+       453, 454, 455, 456], dtype=int64), array([3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+       3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+      dtype=int64))
+Porb :  1.0
+Tuple of arrays returned 4 :  (array([ 82, 310], dtype=int64), array([4, 4], dtype=int64))
+Porb :  0.9999992235086624
+</code></pre></div></div>
+
+<p><img src="/images/posts/clasificacion-burbujas/output_41_1.png" alt="png" /></p>
+
+<h2 id="63--guardando-las-imágenes-por-los-clústers-formados">6.3- Guardando las imágenes por los clústers formados</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">skimage.io</span> <span class="kn">import</span> <span class="n">imsave</span>
+
+<span class="n">i</span><span class="o">=</span><span class="mi">0</span>
+<span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">probs</span><span class="p">:</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">probs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">probs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="nb">max</span><span class="p">())[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">item</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">c</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="n">imsave</span><span class="p">(</span><span class="s">'C:</span><span class="se">\\</span><span class="s">Users</span><span class="se">\\</span><span class="s">nelso</span><span class="se">\\</span><span class="s">Google Drive</span><span class="se">\\</span><span class="s">JupiterNotebooks</span><span class="se">\\</span><span class="s">tesis</span><span class="se">\\</span><span class="s">images_clusters</span><span class="se">\\</span><span class="s">cluster 1</span><span class="se">\\</span><span class="s">{}.png'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="n">collection</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="k">if</span> <span class="n">c</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> <span class="n">imsave</span><span class="p">(</span><span class="s">'C:</span><span class="se">\\</span><span class="s">Users</span><span class="se">\\</span><span class="s">nelso</span><span class="se">\\</span><span class="s">Google Drive</span><span class="se">\\</span><span class="s">JupiterNotebooks</span><span class="se">\\</span><span class="s">tesis</span><span class="se">\\</span><span class="s">images_clusters</span><span class="se">\\</span><span class="s">cluster 2</span><span class="se">\\</span><span class="s">{}.png'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="n">collection</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="k">if</span> <span class="n">c</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span> <span class="n">imsave</span><span class="p">(</span><span class="s">'C:</span><span class="se">\\</span><span class="s">Users</span><span class="se">\\</span><span class="s">nelso</span><span class="se">\\</span><span class="s">Google Drive</span><span class="se">\\</span><span class="s">JupiterNotebooks</span><span class="se">\\</span><span class="s">tesis</span><span class="se">\\</span><span class="s">images_clusters</span><span class="se">\\</span><span class="s">cluster 3</span><span class="se">\\</span><span class="s">{}.png'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="n">collection</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="k">if</span> <span class="n">c</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span> <span class="n">imsave</span><span class="p">(</span><span class="s">'C:</span><span class="se">\\</span><span class="s">Users</span><span class="se">\\</span><span class="s">nelso</span><span class="se">\\</span><span class="s">Google Drive</span><span class="se">\\</span><span class="s">JupiterNotebooks</span><span class="se">\\</span><span class="s">tesis</span><span class="se">\\</span><span class="s">images_clusters</span><span class="se">\\</span><span class="s">cluster 4</span><span class="se">\\</span><span class="s">{}.png'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="n">collection</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="k">if</span> <span class="n">c</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span> <span class="n">imsave</span><span class="p">(</span><span class="s">'C:</span><span class="se">\\</span><span class="s">Users</span><span class="se">\\</span><span class="s">nelso</span><span class="se">\\</span><span class="s">Google Drive</span><span class="se">\\</span><span class="s">JupiterNotebooks</span><span class="se">\\</span><span class="s">tesis</span><span class="se">\\</span><span class="s">images_clusters</span><span class="se">\\</span><span class="s">cluster 5</span><span class="se">\\</span><span class="s">{}.png'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span><span class="n">collection</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
+</code></pre></div></div>
+
+  </section>
+  
+</article>
+
+
+
+      </div>
+
+      <footer class="footer">
+  <span class="footer__copyright">&copy; 2019 Nelsón Romero García. All rights reserved.</span>
+</footer>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="/js/main.js?1575324384102180100"></script>
+
+
+    </div>
+  </body>
+</html>
